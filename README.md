@@ -4,14 +4,9 @@ Inteiros Grandes
 O objetivo do trabalho é implementar, na linguagem C, uma biblioteca que permita representar valores inteiros signed de 128 bits, e ofereça algumas operações aritméticas básicas sobre esses valores (soma, subtração, multiplicação, negação) e operações de deslocamento de bits.
 
 Instruções Gerais
-Leia com atenção o enunciado do trabalho e as instruções para a entrega. Em caso de dúvidas, não invente. Pergunte!
-O trabalho deve ser entregue até as 23h59m do dia 05/05.
-Trabalhos entregues após o prazo perderão um ponto por dia de atraso.
-Trabalhos que não compilem (i.e., que não produzam um executável) não serão considerados, ou seja, receberão grau zero.
-Os trabalhos podem ser feitos em grupos de no máximo dois alunos.
-Alguns grupos poderão ser chamados para apresentações orais / demonstrações dos trabalhos entregues.
 
 Representação para Inteiros Grandes
+
 Para representar um valor inteiro de 128 bits, a biblioteca deverá usar a seguinte definição:
 
 #define NUM_BITS 128
@@ -77,11 +72,13 @@ Para este trabalho, crie um outro arquivo, testebigint.c, contendo uma função 
 Crie seu programa executável testebigint) com a linha:
 
 gcc -Wall -o testebigint bigint.c testebigint.c
+
 Importante! Se, por acaso, você não implementar alguma função, crie uma função dummy para que o programa de teste acima além do usado para a correção do trabalho possa ser gerado sem problemas.
 
 Essa função deverá ter o nome da função não implementada e o corpo
 
  { return; } 
+ 
 Esta técnica é denominada de mocking que consiste em criar funções apenas para teste quando as reais ainda não se encontram implementadas. Isto é também prático para o trabalho incremental em equipe, pois permite tornar indepentende o trabalho de cada membro.
 Lembre-se que deve haver uma preocupação constante em subtituir as funções dummy ou Mocks pelos códigos corretos quando estes estiverem testados e disponibilizados.
 Dicas
