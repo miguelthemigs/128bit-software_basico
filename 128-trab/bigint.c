@@ -1,5 +1,3 @@
-/* Miguel Werneck Roale 2210457 Turma 3WA*/
-/* Nome_do_Aluno2 Matricula Turma */
 
 #include <stdio.h>
 #include <string.h>
